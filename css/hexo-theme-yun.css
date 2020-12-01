@@ -214,7 +214,7 @@ input {
   bottom: 0;
 }
 .char {
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
   font-size: var(--banner-char-size, 1rem);
   font-weight: 900;
   background-color: rgba(255,255,255,0.5);
@@ -650,7 +650,7 @@ input {
   padding-left: 0.6rem;
 }
 .link-item .link-blog {
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
   font-weight: 900;
   margin: 0.42rem 0;
 }
@@ -1272,7 +1272,7 @@ pre[class*='language-']:hover .copy-btn {
   background: rgba(98,0,238,0.3);
 }
 .post-collapse .collection-title .archive-year {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   color: #6200ee;
   margin: 0 1.5rem;
 }
@@ -1336,7 +1336,7 @@ pre[class*='language-']:hover .copy-btn {
   margin-right: 0.3rem;
 }
 .post-collapse .post-header .post-meta {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   font-size: 1rem;
   margin: 1rem 0 1rem 1.2rem;
   white-space: nowrap;
@@ -1355,7 +1355,7 @@ pre[class*='language-']:hover .copy-btn {
   padding: 10px;
   font-size: 1.5rem;
   font-weight: 900;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
 }
 .post-header .post-title .icon {
   width: 1.6rem;
@@ -1414,7 +1414,7 @@ pre[class*='language-']:hover .copy-btn {
 }
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-nav {
   display: flex;
@@ -1634,7 +1634,7 @@ pre[class*='language-']:hover .copy-btn {
   line-height: 1.8;
   padding: 1rem;
   font-size: 1.1rem;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
 }
 .post-toc ol {
   list-style: none;
@@ -1649,7 +1649,7 @@ pre[class*='language-']:hover .copy-btn {
   color: #db2828;
 }
 .post-toc ol .toc-number {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-toc ol .toc-child {
   font-size: 1rem;
@@ -1827,7 +1827,7 @@ pre[class*='language-']:hover .copy-btn {
 }
 .site-name {
   color: var(--hty-text-color);
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
   font-weight: 900;
 }
 .site-subtitle {
@@ -1937,7 +1937,7 @@ pre[class*='language-']:hover .copy-btn {
   color: var(--hty-text-color);
   display: block;
   text-align: center;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial;
   font-weight: bold;
   padding: 0.5rem;
   border-top: 1px solid var(--hty-secondary-text-color);
