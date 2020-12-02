@@ -1,4 +1,274 @@
+colors:
+  primary: "#0000FF"
+  # bg: "#09171B"
+  selection_bg: "#8e71c1" # 选取文字时的背景色
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+tags:
+  Vue: "#4fc08d"
+  Hexo: "#0E834D"
+  CSS: "#5298d1"
+  Node.js: "#026E00"
+  Git: "#F14E32"
+  React: "#61dafb"
+  Python: "#3776ab"
+  PHP: "#8892BF"
+  VS Code: "#0066B8"
+  JavaScript: "#F4DF4F"
+  TypeScript: "#317AC6"
+  Laravel: "#F4645F"
+categories:
+  笔记: dimgray
+head:
+  css:
+    custom: /css/custom.css
+  js:
+    async:
+      # 这里是你从 iconfont 处获得的图标链接。
+      iconfont: //at.alicdn.com/t/font_2241394_6ds2a2w3yp3.js
+cursor:
+  enable: true
+  default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
+  pointer: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
+  text: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
 avatar:
-  url: /images/avatar.jpg # 你的头像图片地址
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/avatar.jpg
   rounded: true
   opacity: 1
+  mickey_mouse: false
+  status:
+    enable: true
+    emoji: 😶
+    message: 不想上学，只想放假
+favicon: /favicon.ico
+reward:
+  enable: true
+  icon: icon-hand-coin-line
+  comment: 欢迎给我打钱，一分也行
+  methods:
+    - name: 支付宝
+      path: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/ali_pay.jpg
+      color: "#00A3EE"
+      icon: icon-alipay-line
+    #- name: QQ 支付
+      #path: https://cdn.jsdelivr.net/gh/YunYouJun/#cdn/img/donate/qqpay-qrcode.png
+      #color: "#12B7F5"
+      #icon: icon-qq-line
+    - name: 微信支付
+      path: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/wechat_pay.jpg
+      color: "#2DC100"
+      icon: icon-wechat-pay-line
+banner:
+  enable: true
+  title: 
+      - fly
+      - 理
+      - 的
+      - 站
+      - 台
+  src: /js/ui/banner.js
+  border: flase
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+social:
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  - name: QQ
+    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+    link: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=896409234
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/flyleeee
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:wyb896409234@163.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: 微博
+    link: https://weibo.com/3592332123
+    icon: icon-weibo-line
+    color: "#E6162D"
+  - name: 网易云音乐
+    link: https://music.163.com/#/user/home?id=97465153
+    icon: icon-netease-cloud-music-line
+    color: "#C10D0C"
+  - name: 知乎
+    link: https://www.zhihu.com/people/bin-bin-you-li-60-20
+    icon: icon-zhihu-line
+    color: "#0084FF"
+  - name: 哔哩哔哩动画
+    link: https://space.bilibili.com/10722245
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: steam
+    link: https://steamcommunity.com/profiles/76561198381531526
+    icon: icon-steam
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+    
+  custom:
+    path: /about/
+    icon: icon-user-line
+footer:
+  since: 2020
+  live_time:
+    enable: true
+    prefix: 本博客已萌萌哒地运行
+    suffix: OVO
+    start_time: "2020-11-19T12:00:00"
+say:
+  enable: true
+  api: /data/sentences.json
+  hitokoto:
+    enable: false
+bg_image:
+  enable: true
+  url: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
+  dark: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
+  #blur: 30px # 设置背景模糊程度
+  opacity: 1
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: icon-open-arm-line
+    color: dodgerblue
+  - name: 喜欢的动漫
+    url: /cartoon/
+    icon: icon-cartoon
+    color: "#181717"
+  - name: To Do list
+    url: /todo/
+    icon: icon-todo
+wordcloud:
+  enable: false
+search:
+  modal: true
+  bg_image: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
+  dark_bg_image: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
+  # placeholder:
+comment:
+  enable: true
+  tips:
+    - 在昵称中输入你的qq号，即可自动获取你的qq头像及昵称进行评论（如果直接评论则默认匿名）~
+  candidates:
+    # - utterances
+    - valine
+github_issues:
+  enable: false
+  username: flyleeee
+  repository: flyleeee.github.io
+  filters: is:issue
+utterances:
+  enable: false
+  repo: flyleeee/flyleeee.github.io
+  issue-term: pathname
+  # label: comment
+  theme: github-light
+font:
+  cdn:
+    enable: true
+    lib:
+      - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap
+  serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial"
+    weight: 900
+  sans_serif:
+    family: "'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif"
+    weight: 400
+  monospace:
+    family: "'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace"
+    
+engine_search:
+  enable: false
+
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+busuanzi:
+  enable: true
+  site_uv: true
+  site_uv_icon: icon-user-line
+  site_pv: true
+  site_pv_icon: icon-eye-line
+  page_pv: true
+  page_pv_icon: icon-eye-line
+
+aplayer:
+  global: true
+  meting: true
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: true
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: 星宿计时
+        artist: 杉田朗/洛天依
+        url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/audio/star-timer.mp3
+        cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
+    meting:
+      enable: true
+      id: 5359768543
+      server: netease
+      type: playlist
+pjax:
+  enable: true
+valine:
+  enable: true
+  appId: ykMcCJpp3yEdwT0XHhOOeAuM-MdYXbMMI
+  appKey: j3HSa0ehqrmSSWxqJuspvdUj
+  placeholder: 随便评论什么都可以呀哟 # comment box placeholder
+  avatar: # gravatar style
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10 # pagination size
+  lang: zh-CN
+  visitor: false
+  # highlight: true
+  # recordIP: false
+  # serverURLs:
+  # Emoji See: https://valine.js.org/emoji.html
+  # emojiCDN: //i0.hdslb.com/bfs/emote/
+  # emojiMaps:
+  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+  #   more...
+  enableQQ: true 
+  # requiredFields:
+  #   - nick
+  #   - mail
+notice:
+  enable: true
+  content: 背景图片：四景|mocha＠３日目南-ナ31a https://www.pixiv.net/artworks/85970602

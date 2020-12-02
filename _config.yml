@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: fly理的站台
+subtitle: 'growing and dying'
+description: '一个高度封装的人在网络世界留下的些许痕迹'
 keywords:
-author: John Doe
+author: fly理
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: https://flyleeee.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -107,3 +107,12 @@ deploy:
   repo: https://github.com/flyleeee/flyleeee.github.io
   branch: master # 默认使用 master 分支
   message: Update Hexo Static Content # 你可以自定义此次部署更新的说明
+search:
+  path: search.xml
+  field: post
+  content: true
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css
+  meting: true
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
