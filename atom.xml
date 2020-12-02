@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2020-12-02T08:15:15.618Z</updated>
+  <updated>2020-12-02T09:00:07.107Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://flyleeee.github.io/2020/12/02/%E6%B5%B7%E6%98%8E%E7%A0%81/"/>
     <id>https://flyleeee.github.io/2020/12/02/%E6%B5%B7%E6%98%8E%E7%A0%81/</id>
     <published>2020-12-02T07:57:48.000Z</published>
-    <updated>2020-12-02T08:15:15.618Z</updated>
+    <updated>2020-12-02T09:00:07.107Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p><a href="https://www.cnblogs.com/scrutable/p/6052127.html">海明码介绍</a></p>]]></content>
     
@@ -33,10 +33,16 @@
     
     
     
-    <category term="学习" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    <category term="网原" scheme="https://flyleeee.github.io/categories/%E7%BD%91%E5%8E%9F/"/>
     
+    
+    <category term="学习" scheme="https://flyleeee.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="计科" scheme="https://flyleeee.github.io/tags/%E8%AE%A1%E7%A7%91/"/>
+    
+    <category term="网原" scheme="https://flyleeee.github.io/tags/%E7%BD%91%E5%8E%9F/"/>
+    
+    <category term="编码" scheme="https://flyleeee.github.io/tags/%E7%BC%96%E7%A0%81/"/>
     
   </entry>
   
