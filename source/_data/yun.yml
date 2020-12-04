@@ -167,7 +167,7 @@ wordcloud:
   enable: false
 search:
   modal: true
-  bg_image: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
+  bg_image: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/p1.png
   dark_bg_image: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
   # placeholder:
 comment:
