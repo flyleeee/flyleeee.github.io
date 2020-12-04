@@ -25,8 +25,7 @@ head:
     custom: /css/custom.css
   js:
     async:
-      # 这里是你从 iconfont 处获得的图标链接。
-      iconfont: //at.alicdn.com/t/font_2241394_6ds2a2w3yp3.js
+      iconfont: //at.alicdn.com/t/font_2241394_q60f8gcf3j.js
 cursor:
   enable: true
   default: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
@@ -127,10 +126,10 @@ menu:
     - type: tags
       path: /tags/
       icon: icon-price-tag-3-line
-    
   custom:
     path: /about/
     icon: icon-user-line
+
 footer:
   since: 2020
   live_time:
@@ -156,11 +155,14 @@ pages:
     color: dodgerblue
   - name: 喜欢的动漫
     url: /cartoon/
-    icon: icon-cartoon
-    color: "#181717"
+    icon: icon-shoucang
+    color: "#FF8C00"
   - name: To Do list
     url: /todo/
     icon: icon-todo
+  - name: site
+    url: /about/site.html
+    icon: icon-webcodelanguageprogramwebdesigncompu
 wordcloud:
   enable: false
 search:
