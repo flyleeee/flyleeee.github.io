@@ -24,11 +24,10 @@ reward: true
 # Contact
 
 社交方式都在侧边栏，易被人肉指数激增（
-* GitHub: flyleeee(萌新属实没啥作品)
-* 微博, 知乎: 平时偶尔刷刷
-* 网易云: 虽然用了很久，可是近年来版权越来越少，快转成qq音乐用户了
-* bilibili: 资深批小将
-* steam: fly理(主页链接需科学上网)
+* GitHub: [flyleeee](https://github.com/flyleeee)(萌新属实没几个作品，但是欢迎点进去康康)
+* 网易云: [fly理](https://music.163.com/#/user/home?id=97465153) lv9高级抑小将，虽然用了很久，可是近年来版权越来越少，快转成qq音乐用户了
+* bilibili: [fly理](https://space.bilibili.com/10722245) 资深批小将
+* steam: [fly理](https://steamcommunity.com/profiles/76561198381531526) (主页链接需科学上网)
 
 # Donate
 

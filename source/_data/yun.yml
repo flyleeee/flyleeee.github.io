@@ -1,5 +1,5 @@
 colors:
-  primary: "#0000FF"
+  primary: "#00BFFF"
   # bg: "#09171B"
   selection_bg: "#8e71c1" # 选取文字时的背景色
   # 标签云中标签的起始色和结束色
@@ -239,9 +239,9 @@ aplayer:
         cover: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0.jpg
     meting:
       enable: true
-      id: 5359768543
+      id: 3098867
       server: netease
-      type: playlist
+      type: album
 pjax:
   enable: true
 valine:
@@ -253,7 +253,6 @@ valine:
   meta:
     - nick
     - mail
-    - link
   pageSize: 10 # pagination size
   lang: zh-CN
   visitor: false
@@ -269,6 +268,10 @@ valine:
   # requiredFields:
   #   - nick
   #   - mail
-notice:
-  enable: true
-  content: 背景图片：四景|mocha＠３日目南-ナ31a https://www.pixiv.net/artworks/85970602
+  
+sidebar:
+  bg_image: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_position: bottom 3rem center
+  tagcloud:
+    enable: false
+    amount: 20
