@@ -144,7 +144,7 @@ say:
     enable: false
 bg_image:
   enable: true
-  url: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/p5.png
+  url: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/p8.png
   dark: https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/1.png
   #blur: 30px # 设置背景模糊程度
   opacity: 1
