@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2020-12-11T09:53:38.076Z</updated>
+  <updated>2020-12-11T10:01:27.185Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://flyleeee.github.io/2020/12/11/post/"/>
     <id>https://flyleeee.github.io/2020/12/11/post/</id>
     <published>2020-12-11T07:53:55.000Z</published>
-    <updated>2020-12-11T09:53:38.076Z</updated>
+    <updated>2020-12-11T10:01:27.185Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><blockquote><p>gitee page服务貌似并不支持自定义域名绑定，根据<a href="">官方说明</a></p></blockquote><h1 id="购买自定义域名"><a href="#购买自定义域名" class="headerlink" title="购买自定义域名"></a>购买自定义域名</h1><p>这个的实现方法很多，我是直接在腾讯云旗下的DNSPOD买了个首年一块钱的（真实穷逼）。</p><h1 id="将自定义域名绑定到github-pages"><a href="#将自定义域名绑定到github-pages" class="headerlink" title="将自定义域名绑定到github pages"></a>将自定义域名绑定到github pages</h1><p>github官方教程：<a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#further-reading">Managing a custom domain for your GitHub Pages site</a><br>下面是我自己在DNSPOD上的流程：</p><ol><li>打开自己的github仓库，打开[^ setting]，在[^ github pages]那里把[^ Custom domain]改成自己的自定义域名，[^ save]<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/ababa.png" alt="Custom domain" loading="lazy"></li><li>在DNSPOD上把自己在github pages上的域名写到CNAME里去，详见<a href="https://docs.dnspod.cn/dns/5f2d4664e8320f1a740d9cf9/">DNSPOD官方教程</a>。<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/CNAME.png" alt="CNAME" loading="lazy"></li><li>更新中</li></ol>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><blockquote><p>gitee page服务貌似并不支持自定义域名绑定，根据<a href="">官方说明</a></p></blockquote><h1 id="购买自定义域名"><a href="#购买自定义域名" class="headerlink" title="购买自定义域名"></a>购买自定义域名</h1><p>这个的实现方法很多，我是直接在腾讯云旗下的DNSPOD买了个首年一块钱的（真实穷逼）。</p><h1 id="将自定义域名绑定到github-pages"><a href="#将自定义域名绑定到github-pages" class="headerlink" title="将自定义域名绑定到github pages"></a>将自定义域名绑定到github pages</h1><p>github官方教程：<a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#further-reading">Managing a custom domain for your GitHub Pages site</a><br>下面是我自己在DNSPOD上的流程：</p><ol><li>打开自己的github仓库，打开<code>setting</code>，在<code>github pages</code>那里把<code>Custom domain</code>改成自己的自定义域名，<code>save</code><br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/ababa.png" alt="Custom domain" loading="lazy"></li><li>在DNSPOD上把自己在github pages上的域名写到CNAME里去，详见<a href="https://docs.dnspod.cn/dns/5f2d4664e8320f1a740d9cf9/">DNSPOD官方教程</a>。<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/CNAME.png" alt="CNAME" loading="lazy"></li><li>更新中</li></ol>]]></content>
     
     
       
