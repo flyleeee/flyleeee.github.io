@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /about/
+Allow: /2020/
+Allow: /2021/
+Allow: /cartoon/
+Allow: /categories/
+Allow: /todo/
+Allow: /tags/
+Allow: /links/
+Allow: /images/
+Disallow: /lib/
+Disallow: /js/
+Disallow: /css/
+Disallow: /data/
+
+Sitemap: http://flyleeee.github.io/sitemap.xml
+Sitemap: http://flyleeee.github.io/baidusitemap.xml
