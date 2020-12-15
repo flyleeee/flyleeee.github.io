@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://flyleeee.github.io/about/site.html</loc>
+    
+    <lastmod>2020-12-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://flyleeee.github.io/about/index.html</loc>
     
     <lastmod>2020-12-13</lastmod>
@@ -24,13 +31,6 @@
   
   <url>
     <loc>https://flyleeee.github.io/2020/12/10/post-1/</loc>
-    
-    <lastmod>2020-12-11</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://flyleeee.github.io/about/site.html</loc>
     
     <lastmod>2020-12-11</lastmod>
     
@@ -172,20 +172,6 @@
   </url>
   
   <url>
-    <loc>https://flyleeee.github.io/tags/%E4%B8%B4%E6%97%B6%E6%84%9F%E6%83%B3/</loc>
-    <lastmod>2020-12-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://flyleeee.github.io/tags/sth/</loc>
-    <lastmod>2020-12-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://flyleeee.github.io/tags/%E8%AE%A1%E7%A7%91/</loc>
     <lastmod>2020-12-15</lastmod>
     <changefreq>daily</changefreq>
@@ -201,6 +187,20 @@
   
   <url>
     <loc>https://flyleeee.github.io/tags/%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2020-12-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://flyleeee.github.io/tags/%E4%B8%B4%E6%97%B6%E6%84%9F%E6%83%B3/</loc>
+    <lastmod>2020-12-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://flyleeee.github.io/tags/sth/</loc>
     <lastmod>2020-12-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
