@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>两条道路</title>
+      <link href="2021/03/16/post-3/"/>
+      <url>2021/03/16/post-3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>杀死我的办法与拯救我的办法<br>杀死我的办法：若无法实现后者即可<br>拯救我的办法：证明我悲哀的脸、糟糕的性格有着什么比相反者更好的地方<br><br/><br><br/><br>如此看来，用渺茫二字形容后者的存在都显得无比可笑，只不过是在公路排水沟的草丛里躺倒着的，介于阿季卢尔福和古尔杜鲁之间的生物罢了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 临时感想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的心曾悲伤七次</title>
       <link href="2021/01/30/times/"/>
       <url>2021/01/30/times/</url>
@@ -60,7 +79,7 @@
       <link href="2020/12/11/post/"/>
       <url>2020/12/11/post/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><blockquote><p>gitee pages服务貌似并不支持自定义域名绑定，根据<a href="https://gitee.com/help/articles/4228">官方说明</a>，该服务现在仅由gitee pages Pro服务支持，而该服务个人用户现已无法购买。<br>主要基于腾讯云</p></blockquote><h1 id="购买自定义域名"><a href="#购买自定义域名" class="headerlink" title="购买自定义域名"></a>购买自定义域名</h1><p>这个的实现方法很多，我是直接在腾讯云旗下的DNSPOD买了个首年一块钱的（真实穷逼）。买完还有工作人员给我打电话问还有什么疑惑啥的，服务有点好，有点受宠若惊，嘿嘿。然后实名认证一下，说是要什么一到两个工作日后台审核才能走完全部流程，实则我搞的时候一个小时左右差不多就完事了，但是DNS服务还要多等几个小时才完全正常运行，至少我搞的时候是这么个情况。</p><h1 id="将自定义域名绑定到github-pages"><a href="#将自定义域名绑定到github-pages" class="headerlink" title="将自定义域名绑定到github pages"></a>将自定义域名绑定到github pages</h1><p>github官方教程：<a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#further-reading">Managing a custom domain for your GitHub Pages site</a><br>下面是我自己在DNSPOD上的流程：</p><ol><li><del>打开自己的github仓库，打开<code>setting</code>，在<code>github pages</code>那里把<code>Custom domain</code>改成自己的自定义域名，<code>save</code></del><br>试过以后我才发现被划去的步骤对于使用hexo搭建博客的我来说是完全错误的，对于github pages来说，被划去的步骤实际上执行了一个操作，那就是在你的仓库master分支下生成了一个叫CNAME的文件，而这个文件的内容就是你的提交的子域名，但倘若你使用诸如hexo这样的框架去实现推送，它每次都会自动地把CNAME覆盖掉，为了实现在推送以后也不覆盖掉CNAME文件，你必须自己在<code>source</code>文件夹下创一个叫CNAME的文件(大写无后缀)，然后把内容写成你的域名即可(例如我的就是flylee.club)，hexo的原理就是在<code>source</code>文件夹下的非markdown文件都会原模原样地上传到github仓库文件夹下，所以这样就成功了&gt; V &lt;。</li><li>在DNSPOD上把自己在github pages上的域名写到CNAME里去，详见<a href="https://docs.dnspod.cn/dns/5f2d4664e8320f1a740d9cf9/">DNSPOD官方教程</a>。<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/CNAME.png" alt="CNAME" loading="lazy">(这两步先后顺序无所谓)。</li><li>这一步应该不是必须的，<a href="https://cloud.tencent.com/product/ssl?from=newDNSPod">申请SSL证书</a>，这样你的域名就可以通过https安全访问了，浏览器也不会报警什么的，貌似有的域名买下来的时候自带这个？我也不是很清楚，反正我是自己手动申了一个，在选择界面别被默认的4000块吓到了（本人情况QAQ)，选<code>域名免费版(DV)</code>，就可以白嫖到一个SSL证书啦OVO。</li></ol><h1 id="备案"><a href="#备案" class="headerlink" title="备案"></a>备案</h1><p>我备案主要是为了使用国内CDN进行访问加速，不然github的国内裸连有时实在不是很理想。</p><ol><li>我使用的是<a href="https://cloud.tencent.com/product/ba?_ga=1.47523183.916133905.1568449197">腾讯云备案</a>，需要买至少三个月的腾讯云服务器才行，不过可以使用腾讯的学生优惠服务<a href="https://cloud.tencent.com/act/campus?from=11821">云+校园</a>，三个月只需27元，还是很可以的了，然后每个地方审核要求不太一样，按要求提交各种信息过个两三周基本就过了。</li><li>完了还要在30天内搞个公安备案，腾讯云那边会有通知和教程，还是得提交一堆信息文件啥的，然后慢慢等审核= =。</li></ol>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><blockquote><p>gitee pages服务貌似并不支持自定义域名绑定，根据<a href="https://gitee.com/help/articles/4228">官方说明</a>，该服务现在仅由gitee pages Pro服务支持，而该服务个人用户现已无法购买。<br>主要基于腾讯云</p></blockquote><h1 id="购买自定义域名"><a href="#购买自定义域名" class="headerlink" title="购买自定义域名"></a>购买自定义域名</h1><p>这个的实现方法很多，我是直接在腾讯云旗下的DNSPOD买了个首年一块钱的（真实穷逼）。买完还有工作人员给我打电话问还有什么疑惑啥的，服务有点好，有点受宠若惊，嘿嘿。然后实名认证一下，说是要什么一到两个工作日后台审核才能走完全部流程，实则我搞的时候一个小时左右差不多就完事了，但是DNS服务还要多等几个小时才完全正常运行，至少我搞的时候是这么个情况。</p><h1 id="将自定义域名绑定到github-pages"><a href="#将自定义域名绑定到github-pages" class="headerlink" title="将自定义域名绑定到github pages"></a>将自定义域名绑定到github pages</h1><p>github官方教程：<a href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#further-reading">Managing a custom domain for your GitHub Pages site</a><br>下面是我自己在DNSPOD上的流程：</p><ol><li><del>打开自己的github仓库，打开<code>setting</code>，在<code>github pages</code>那里把<code>Custom domain</code>改成自己的自定义域名，<code>save</code></del><br>试过以后我才发现被划去的步骤对于使用hexo搭建博客的我来说是完全错误的，对于github pages来说，被划去的步骤实际上执行了一个操作，那就是在你的仓库master分支下生成了一个叫CNAME的文件，而这个文件的内容就是你的提交的子域名，但倘若你使用诸如hexo这样的框架去实现推送，它每次都会自动地把CNAME覆盖掉，为了实现在推送以后也不覆盖掉CNAME文件，你必须自己在<code>source</code>文件夹下创一个叫CNAME的文件(大写无后缀)，然后把内容写成你的域名即可(例如我的就是flylee.club)，hexo的原理就是在<code>source</code>文件夹下的非markdown文件都会原模原样地上传到github仓库文件夹下，所以这样就成功了&gt; V &lt;。</li><li>在DNSPOD上把自己在github pages上的域名写到CNAME里去，详见<a href="https://docs.dnspod.cn/dns/5f2d4664e8320f1a740d9cf9/">DNSPOD官方教程</a>。<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/CNAME.png" alt="CNAME" loading="lazy">(这两步先后顺序无所谓)。</li><li>这一步应该不是必须的，<a href="https://cloud.tencent.com/product/ssl?from=newDNSPod">申请SSL证书</a>，这样你的域名就可以通过https安全访问了，浏览器也不会报警什么的，貌似有的域名买下来的时候自带这个？我也不是很清楚，反正我是自己手动申了一个，在选择界面别被默认的4000块吓到了（本人情况QAQ)，选<code>域名免费版(DV)</code>，就可以白嫖到一个SSL证书啦OVO。</li></ol><h1 id="备案"><a href="#备案" class="headerlink" title="备案"></a>备案</h1><p>我备案主要是为了使用国内CDN进行访问加速，不然github的国内裸连有时实在不是很理想。</p><ol><li>我使用的是<a href="https://cloud.tencent.com/product/ba?_ga=1.47523183.916133905.1568449197">腾讯云备案</a>，需要买至少三个月的腾讯云服务器才行，不过可以使用腾讯的学生优惠服务<a href="https://cloud.tencent.com/act/campus?from=11821">云+校园</a>，三个月只需27元，还是很可以的了，然后每个地方审核要求不太一样，按要求提交各种信息过个两三周基本就过了，记得审核的时候把域名的dns解析关了就行。</li><li>完了还要在30天内搞个公安备案，腾讯云那边会有通知和教程，还是得提交一堆信息文件啥的，然后慢慢等审核= =。</li></ol>]]></content>
       
       
       <categories>
