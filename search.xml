@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>VSC插件：在VSC里可视化你的md文件</title>
+      <link href="2021/09/19/Enhanced/"/>
+      <url>2021/09/19/Enhanced/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="Markdown-Preview-Enhanced"><a href="#Markdown-Preview-Enhanced" class="headerlink" title="Markdown Preview Enhanced"></a>Markdown Preview Enhanced</h1><p>在扩展商店里搜索Markdown Preview Enhanced，安装，在markdown文件中按下<code>ctrl+k</code>再按下<code>v</code>即可在侧窗口打开md的preview辣！<br>按下<code>ctrl+shift+v</code>可以全屏预览。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> VSC </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="2021/03/25/post-4/"/>
       <url>2021/03/25/post-4/</url>

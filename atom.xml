@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2021-03-25T05:49:38.400Z</updated>
+  <updated>2021-09-19T06:46:50.446Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VSC插件：在VSC里可视化你的md文件</title>
+    <link href="https://flyleeee.github.io/2021/09/19/Enhanced/"/>
+    <id>https://flyleeee.github.io/2021/09/19/Enhanced/</id>
+    <published>2021-09-19T06:41:59.000Z</published>
+    <updated>2021-09-19T06:46:50.446Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="Markdown-Preview-Enhanced"><a href="#Markdown-Preview-Enhanced" class="headerlink" title="Markdown Preview Enhanced"></a>Markdown Preview Enhanced</h1><p>在扩展商店里搜索Markdown Preview Enhanced，安装，在markdown文件中按下<code>ctrl+k</code>再按下<code>v</code>即可在侧窗口打开md的preview辣！<br>按下<code>ctrl+shift+v</code>可以全屏预览。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
+      
+    
+    
+    
+    
+    <category term="VSC" scheme="https://flyleeee.github.io/tags/VSC/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
