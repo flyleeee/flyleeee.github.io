@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>pytorch的细枝末节</title>
+      <link href="2021/09/19/pytorch-notebook/"/>
+      <url>2021/09/19/pytorch-notebook/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><ul><li>后缀为单下划线<code>_</code>的方法一般指<code>inplace = True</code>的方法，例如<br>clamp 和 clamp_ :<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/20190208220807723.png" alt="example" loading="lazy"></li><li><code>model.eval()</code>与<code>model.train()</code>：<br>eval会停止batch normalization和drop out</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> pytorch学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> pytorch </tag>
+            
+            <tag> ml </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VSC插件：在VSC里可视化你的md文件</title>
       <link href="2021/09/19/Enhanced/"/>
       <url>2021/09/19/Enhanced/</url>

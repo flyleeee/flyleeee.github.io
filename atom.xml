@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2021-09-19T06:46:50.446Z</updated>
+  <updated>2021-09-19T07:51:48.024Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pytorch的细枝末节</title>
+    <link href="https://flyleeee.github.io/2021/09/19/pytorch-notebook/"/>
+    <id>https://flyleeee.github.io/2021/09/19/pytorch-notebook/</id>
+    <published>2021-09-19T07:39:30.000Z</published>
+    <updated>2021-09-19T07:51:48.024Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><ul><li>后缀为单下划线<code>_</code>的方法一般指<code>inplace = True</code>的方法，例如<br>clamp 和 clamp_ :<br><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/20190208220807723.png" alt="example" loading="lazy"></li><li><code>model.eval()</code>与<code>model.train()</code>：<br>eval会停止batch normalization和drop out</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="pytorch学习笔记" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="学习" scheme="https://flyleeee.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="pytorch" scheme="https://flyleeee.github.io/tags/pytorch/"/>
+    
+    <category term="ml" scheme="https://flyleeee.github.io/tags/ml/"/>
+    
+  </entry>
   
   <entry>
     <title>VSC插件：在VSC里可视化你的md文件</title>
