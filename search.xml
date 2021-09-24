@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>自适应学习率算法</title>
+      <link href="2021/09/24/%E8%87%AA%E9%80%82%E5%BA%94%E5%AD%A6%E4%B9%A0%E7%8E%87%E7%AE%97%E6%B3%95/"/>
+      <url>2021/09/24/%E8%87%AA%E9%80%82%E5%BA%94%E5%AD%A6%E4%B9%A0%E7%8E%87%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="自适应学习率算法"><a href="#自适应学习率算法" class="headerlink" title="自适应学习率算法"></a>自适应学习率算法</h1><p>李宏毅视频课：<a href="https://www.bilibili.com/video/BV1Wv411h7kN?p=16">https://www.bilibili.com/video/BV1Wv411h7kN?p=16</a></p><h2 id="AdaGrad"><a href="#AdaGrad" class="headerlink" title="AdaGrad"></a>AdaGrad</h2><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924100248724.png" alt="image-20210924100248724" style="zoom: 33%;" / loading="lazy"><p>将每次的梯度叠加值除以一个之前梯度的累积，可以防止前期的梯度过大导致在最优点附近步长过大，但这是基于凸优化提出的，实际对于神经网络来说会导致梯度过早和过量的减小</p><h2 id="RMSProp"><a href="#RMSProp" class="headerlink" title="RMSProp"></a>RMSProp</h2><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924100646876.png" alt="image-20210924100646876" style="zoom: 67%;" / loading="lazy"><p>对AdaGrad在非凸情况下做出了优化，对于非凸函数训练神经网络，学习轨迹可能穿过了很多不同的结构，但AdaGrad统计了太多之前别的局部凸函数结构的信息，这是不应该的，RMSRrop使得学习率能更注重于局部凸函数结构。</p><h2 id="Adam"><a href="#Adam" class="headerlink" title="Adam"></a>Adam</h2><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924102333817.png" alt="image-20210924102333817" style="zoom: 50%;" / loading="lazy"><p>Adam主要对于momentum和velocity的累积做出了时间上的平均，在前期可以使这两项不会太小，而在后期使它们不会太大。</p><h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><p>Adam与SGDM是近几年SOTA模型都在用的两种优化方法，Adam在test上表现最好，SGDM在validation上的表现最好</p><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924104133070.png" alt="image-20210924104133070" style="zoom: 50%;" / loading="lazy"><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924104220146.png" alt="image-20210924104220146" style="zoom:50%;" / loading="lazy"><p>在其他的实验中，Adam一开始训练速度很快，但泛化很差，不稳定；SGDM虽然训练比较慢，但泛化要更好，而且表现稳定</p><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924105342498.png" alt="image-20210924105342498" style="zoom:50%;" / loading="lazy"><p>一个直觉的解释：<strong>可能是</strong>因为Adam找到的是比较sharp的minimum，这种minimum泛化gap会比较大，而SGDM找到的是比较flat的，泛化gap小</p><h2 id="SWATS"><a href="#SWATS" class="headerlink" title="SWATS"></a>SWATS</h2><p><img src="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20210924105602690.png" alt="image-20210924105602690" loading="lazy"></p><p>还有好多针对Adam和SGDM的改进方法，详见视频课</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> ML学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> ml </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在mnist上使用torchvision的架构</title>
       <link href="2021/09/21/post-5/"/>
       <url>2021/09/21/post-5/</url>
