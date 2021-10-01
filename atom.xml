@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2021-10-01T03:29:01.698Z</updated>
+  <updated>2021-10-01T03:50:25.184Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>STL</title>
+    <link href="https://flyleeee.github.io/2021/10/01/STL/"/>
+    <id>https://flyleeee.github.io/2021/10/01/STL/</id>
+    <published>2021-10-01T03:47:37.000Z</published>
+    <updated>2021-10-01T03:50:25.184Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h2 id="为什么需要它"><a href="#为什么需要它" class="headerlink" title="为什么需要它"></a>为什么需要它</h2><p>CNN无法做到旋转与缩放不变性,translatian也只能做的很小(利用pooling)</p><h2 id="STL做的事情"><a href="#STL做的事情" class="headerlink" title="STL做的事情"></a>STL做的事情</h2><p>对图像做旋转与缩放，并使这一过程的参数可学习，其实就是用仿射变换(affine transformation)</p><p>&lt;<a href="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001104926002.png&quot;">https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001104926002.png"</a> alt=”image-20211001104926002” style=”zoom: 67%;” /&gt;</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>&lt;<a href="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105006792.png&quot;">https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105006792.png"</a> alt=”image-20211001105006792” style=”zoom: 67%;” /&gt;</p><p>如果train出来的转移方程，通过四舍五入导致一个pixel的位置不变，那么它的参数gradient为0</p><h2 id="解决办法：Interpolation-插值"><a href="#解决办法：Interpolation-插值" class="headerlink" title="解决办法：Interpolation(插值)"></a>解决办法：Interpolation(插值)</h2><p>&lt;<a href="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105352136.png&quot;">https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105352136.png"</a> alt=”image-20211001105352136” style=”zoom:67%;” /&gt;</p><p>不用四舍五入，而用双线性插值，基本思想是通过某一点周围四个点的灰度值来估计出该点的灰度值</p><h2 id="具体结构"><a href="#具体结构" class="headerlink" title="具体结构"></a>具体结构</h2><h3 id="3-1-Localisation-Network"><a href="#3-1-Localisation-Network" class="headerlink" title="3.1 Localisation Network"></a>3.1 Localisation Network</h3><p>The localisation network function floc() can take any form, such as a fully-connected network or a convolutional network, but should include a final regression layer to produce the transformation parameters θ.</p><h3 id="3-2-Parameterised-Sampling-Grid"><a href="#3-2-Parameterised-Sampling-Grid" class="headerlink" title="3.2 Parameterised Sampling Grid"></a>3.2 Parameterised Sampling Grid</h3><p>用上一层output出的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.023ex" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.618ex" role="img" focusable="false" viewBox="0 -705 469 715"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g></g></g></svg></mjx-container>来做仿射变换</p><h3 id="3-3-Differentiable-Image-Sampling"><a href="#3-3-Differentiable-Image-Sampling" class="headerlink" title="3.3 Differentiable Image Sampling"></a>3.3 Differentiable Image Sampling</h3><p>再做双线性插值，实现可微</p><h2 id="实际应用"><a href="#实际应用" class="headerlink" title="实际应用"></a>实际应用</h2><p>&lt;<a href="https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105837553.png&quot;">https://cdn.jsdelivr.net/gh/flyleeee/flyleeee.github.io/images/image-20211001105837553.png"</a> alt=”image-20211001105837553” style=”zoom: 33%;” /&gt;</p><p>这种layer可以用来处理input与feature map，也可以在同一层加多个单元(这里将它看做一个neuron)以产生不同的Spatial Transformer Output</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="ML学习笔记" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="CV笔记" scheme="https://flyleeee.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/ML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/CV%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="学习" scheme="https://flyleeee.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="ml" scheme="https://flyleeee.github.io/tags/ml/"/>
+    
+    <category term="cv" scheme="https://flyleeee.github.io/tags/cv/"/>
+    
+  </entry>
   
   <entry>
     <title>自适应学习率算法</title>
