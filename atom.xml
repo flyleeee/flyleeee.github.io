@@ -6,7 +6,7 @@
   <link href="https://flyleeee.github.io/atom.xml" rel="self"/>
   
   <link href="https://flyleeee.github.io/"/>
-  <updated>2021-10-04T11:32:00.681Z</updated>
+  <updated>2021-10-04T12:22:03.194Z</updated>
   <id>https://flyleeee.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python中实参的*</title>
+    <link href="https://flyleeee.github.io/2021/10/04/post-6/"/>
+    <id>https://flyleeee.github.io/2021/10/04/post-6/</id>
+    <published>2021-10-04T12:13:21.000Z</published>
+    <updated>2021-10-04T12:22:03.194Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="python中实参的"><a href="#python中实参的" class="headerlink" title="python中实参的*"></a>python中实参的*</h1><p>在调用函数时，*和**可以分别拆开元组与字典中的参数</p><h2 id="："><a href="#：" class="headerlink" title="*："></a>*：</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myprint</span>(<span class="params">x,y</span>):</span></span><br><span class="line">    print(x)</span><br><span class="line">    print(y)</span><br></pre></td></tr></table></figure><p>假设你还有一个元组：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">params=(<span class="number">1</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure><p>可以通过如下方式调用myprint函数：</p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myprint(*params)</span><br></pre></td></tr></table></figure><p>就可以输出</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure><h2 id="：-1"><a href="#：-1" class="headerlink" title="**："></a>**：</h2><p>和上面3.1.2很像，是分配字典的。</p><p>这回params是一个字典了：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">params=&#123;<span class="string">&#x27;x&#x27;</span>:<span class="number">1</span>,<span class="string">&#x27;y&#x27;</span>:<span class="number">2</span>&#125;</span><br></pre></td></tr></table></figure><p>可以通过如下方式调用myprint函数：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myprint(**params)</span><br></pre></td></tr></table></figure><p>就可以输出：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
+      
+    
+    
+    
+    <category term="py那些小tips" scheme="https://flyleeee.github.io/categories/py%E9%82%A3%E4%BA%9B%E5%B0%8Ftips/"/>
+    
+    
+    <category term="python" scheme="https://flyleeee.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>可视化你的进度条：tqdm</title>
@@ -502,30 +526,6 @@
     
     
     <category term="摘录" scheme="https://flyleeee.github.io/tags/%E6%91%98%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>冬瓜爬，土豆飞</title>
-    <link href="https://flyleeee.github.io/2020/11/19/%E8%AF%A5%E6%AD%BB%E7%9A%84%E5%86%AC%E7%93%9C/"/>
-    <id>https://flyleeee.github.io/2020/11/19/%E8%AF%A5%E6%AD%BB%E7%9A%84%E5%86%AC%E7%93%9C/</id>
-    <published>2020-11-19T08:41:59.000Z</published>
-    <updated>2020-12-01T11:05:09.709Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><h1 id="为什么要把冬瓜和土豆放一起啊"><a href="#为什么要把冬瓜和土豆放一起啊" class="headerlink" title="为什么要把冬瓜和土豆放一起啊"></a>为什么要把冬瓜和土豆放一起啊</h1><p>和高贵的土豆比起来，冬瓜是什么臭鱼烂虾啊（<br><del>祝愿所有用冬瓜冒充土豆的食堂师傅过马路必等红灯</del></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css&quot;&gt;&lt;scrip</summary>
-      
-    
-    
-    
-    <category term="普通的博客" scheme="https://flyleeee.github.io/categories/%E6%99%AE%E9%80%9A%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="临时感想" scheme="https://flyleeee.github.io/tags/%E4%B8%B4%E6%97%B6%E6%84%9F%E6%83%B3/"/>
     
   </entry>
   
